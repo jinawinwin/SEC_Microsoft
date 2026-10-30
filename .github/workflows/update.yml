@@ -36,10 +36,10 @@ jobs:
         continue-on-error: true
         shell: bash
         env:
-          # SEC 공정 접근 정책: 연락처가 포함된 User-Agent 필요.
-          # 본인 연락처를 쓰려면 Settings > Secrets and variables > Actions > Variables 에
-          # SEC_USER_AGENT = "이름 이메일@도메인" 으로 등록하세요 (미등록 시 아래 기본값 사용).
-          SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT || 'SEC-Microsoft-Dashboard jinawinwin@users.noreply.github.com' }}
+          # SEC 공정 접근 정책: 실제 연락처가 포함된 User-Agent가 필요합니다 (noreply 주소는 거절됨).
+          # Settings > Secrets and variables > Actions > Variables 에
+          # SEC_USER_AGENT = "이름 이메일@도메인" (예: JY Research name@example.com) 으로 등록하세요.
+          SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
         run: |
           set -o pipefail
           { python -m unittest discover -s tests -v && python scripts/fetch_sec.py; } 2>&1 | tee run.log

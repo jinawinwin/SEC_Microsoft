@@ -46,7 +46,7 @@ SEC EDGAR에 공시된 Microsoft(MSFT, CIK 0000789019)의 10-K·10-Q 데이터(X
 
 Actions 탭의 **Update SEC data & deploy dashboard → Run workflow** 로 언제든 수동 실행할 수 있습니다.
 
-SEC는 연락처가 포함된 User-Agent를 요구합니다. 본인 연락처를 쓰려면 저장소 *Settings → Secrets and variables → Actions → Variables*에 `SEC_USER_AGENT`(예: `홍길동 name@example.com`)를 등록하세요. 등록하지 않으면 워크플로우의 기본값을 사용합니다.
+**최초 1회 설정 필요:** SEC는 실제 연락처가 포함된 User-Agent를 요구하며, 없거나 `noreply` 주소이면 "Undeclared Automated Tool"로 403 거절합니다. 저장소 *Settings → Secrets and variables → Actions → Variables → New repository variable*에서 이름 `SEC_USER_AGENT`, 값 `이름 이메일@도메인`(예: `JY Research name@example.com`)을 등록하세요. 실패 시 원인은 `logs/last_failure.log`에 기록됩니다.
 
 ## Global peer firms
 
