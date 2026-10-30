@@ -1,4 +1,4 @@
-run: 6  time: 2026-10-30T12:15:53Z
+run: 7  time: 2026-10-30T12:19:28Z
 
 test_annual (test_pipeline.CompanyTables.test_annual) ... ok
 test_balance_sheet_instants (test_pipeline.CompanyTables.test_balance_sheet_instants) ... ok
@@ -27,4 +27,4 @@ Ran 21 tests in 0.002s
 
 OK
 Fetching Microsoft companyfacts ...
-SEC returned 403 for https://data.sec.gov/api/xbrl/companyfacts/CIK0000789019.json. SEC requires a descriptive User-Agent with contact info, e.g. SEC_USER_AGENT='Your Name your@email.com'.
+SEC returned 403 for https://data.sec.gov/api/xbrl/companyfacts/CIK0000789019.json. Response text: '�\x08\x00\x00\x00\x00\x00\x00\x03�X�n�F\x16�笠��@\x02X�$�J�(�M��\x1ah\x13#�7�_�� I�&gؙ�d�\x1b`_c����G�\'�sgHQN\\��"@Bj�~�{�ef\x7fy��|���KZ���˫o��8�^?I>��\'ɋ� �Ƿ�￣�`H +�S^\x19-�$y��G����4I���`{20v�,�%7�k���c� H\x0er���G�`�,�{v�����Y�\x0ew���O)� �ۗ?�j�wn����\x17�J�(�o�z^���e�R�\x16�I��j���G �x� 9\x7f��|�2\x1b�\x17�`jK�Q:Oo�Z)-�t���$��J�2+��9=��)q��\x98b�DUG3�w�o\x08�v-�j��4\x1a\x0e'. SEC requires a descriptive User-Agent with contact info, e.g. SEC_USER_AGENT='Your Name your@email.com'; 403 can also mean the caller's IP range is blocked or rate-limited.
