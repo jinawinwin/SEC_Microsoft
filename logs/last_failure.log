@@ -1,4 +1,4 @@
-run: 7  time: 2026-10-30T12:19:28Z
+run: 8  time: 2026-10-30T12:20:00Z
 
 test_annual (test_pipeline.CompanyTables.test_annual) ... ok
 test_balance_sheet_instants (test_pipeline.CompanyTables.test_balance_sheet_instants) ... ok
@@ -23,8 +23,8 @@ test_no_revenue_returns_none (test_pipeline.PeerSnapshot.test_no_revenue_returns
 test_uses_latest_annual_period_and_matching_end_dates (test_pipeline.PeerSnapshot.test_uses_latest_annual_period_and_matching_end_dates) ... ok
 
 ----------------------------------------------------------------------
-Ran 21 tests in 0.002s
+Ran 21 tests in 0.001s
 
 OK
 Fetching Microsoft companyfacts ...
-SEC returned 403 for https://data.sec.gov/api/xbrl/companyfacts/CIK0000789019.json. Response text: '�\x08\x00\x00\x00\x00\x00\x00\x03�X�n�F\x16�笠��@\x02X�$�J�(�M��\x1ah\x13#�7�_�� I�&gؙ�d�\x1b`_c����G�\'�sgHQN\\��"@Bj�~�{�ef\x7fy��|���KZ���˫o��8�^?I>��\'ɋ� �Ƿ�￣�`H +�S^\x19-�$y��G����4I���`{20v�,�%7�k���c� H\x0er���G�`�,�{v�����Y�\x0ew���O)� �ۗ?�j�wn����\x17�J�(�o�z^���e�R�\x16�I��j���G �x� 9\x7f��|�2\x1b�\x17�`jK�Q:Oo�Z)-�t���$��J�2+��9=��)q��\x98b�DUG3�w�o\x08�v-�j��4\x1a\x0e'. SEC requires a descriptive User-Agent with contact info, e.g. SEC_USER_AGENT='Your Name your@email.com'; 403 can also mean the caller's IP range is blocked or rate-limited.
+SEC returned 403 for https://data.sec.gov/api/xbrl/companyfacts/CIK0000789019.json. Response text: 'SEC.gov | Your Request Originates from an Undeclared Automated Tool html {height: 100%} body {height: 100%; margin:0; padding:0;} #header {background-color:#003968; color:#fff; padding:15px 20px 10px 20px;font-family:Arial, Helvetica, sans-serif; font-size:20px; border-bottom:solid 5px #000;} #foote'. SEC requires a descriptive User-Agent with contact info, e.g. SEC_USER_AGENT='Your Name your@email.com'; 403 can also mean the caller's IP range is blocked or rate-limited.
