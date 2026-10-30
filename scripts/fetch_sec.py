@@ -50,7 +50,10 @@ def http_json(url: str, user_agent: str, retries: int = 5):
             last = err
             if err.code == 403:
                 try:
-                    body = err.read(2000).decode("utf-8", "replace")
+                    raw_body = err.read()
+                    if raw_body[:2] == b"\x1f\x8b":
+                        raw_body = gzip.decompress(raw_body)
+                    body = raw_body.decode("utf-8", "replace")
                 except Exception:  # noqa: BLE001
                     body = ""
                 body = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", body)).strip()[:300]
