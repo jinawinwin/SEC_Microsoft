@@ -49,9 +49,15 @@ def http_json(url: str, user_agent: str, retries: int = 5):
         except urllib.error.HTTPError as err:
             last = err
             if err.code == 403:
+                try:
+                    body = err.read(2000).decode("utf-8", "replace")
+                except Exception:  # noqa: BLE001
+                    body = ""
+                body = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", body)).strip()[:300]
                 raise SystemExit(
-                    f"SEC returned 403 for {url}. SEC requires a descriptive User-Agent with contact "
-                    "info, e.g. SEC_USER_AGENT='Your Name your@email.com'.")
+                    f"SEC returned 403 for {url}. Response text: {body!r}. SEC requires a descriptive "
+                    "User-Agent with contact info, e.g. SEC_USER_AGENT='Your Name your@email.com'; "
+                    "403 can also mean the caller's IP range is blocked or rate-limited.")
             if err.code in (429, 500, 502, 503, 504):
                 time.sleep(2 ** attempt)
                 continue
