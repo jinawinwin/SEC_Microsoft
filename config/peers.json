@@ -1,0 +1,16 @@
+{
+  "_comment": "Peer set for the Microsoft dashboard. Edit freely: name_match must be a lowercase substring of the SEC entityName (guards against a wrong CIK). Peers whose name does not match are skipped with a warning.",
+  "peers": [
+    {"ticker": "GOOGL", "name": "Alphabet", "cik": "0001652044", "name_match": "alphabet", "region": "US", "rationale": "Google Cloud · Workspace · Gemini AI: direct rival in cloud, productivity and AI"},
+    {"ticker": "AMZN", "name": "Amazon", "cik": "0001018724", "name_match": "amazon", "region": "US", "rationale": "AWS: the other leading hyperscale public cloud"},
+    {"ticker": "AAPL", "name": "Apple", "cik": "0000320193", "name_match": "apple", "region": "US", "rationale": "Platform and devices (OS, PC, services): mega-cap platform peer"},
+    {"ticker": "META", "name": "Meta Platforms", "cik": "0001326801", "name_match": "meta platforms", "region": "US", "rationale": "AI infrastructure spending and open models: big-tech AI capex benchmark"},
+    {"ticker": "NVDA", "name": "NVIDIA", "cik": "0001045810", "name_match": "nvidia", "region": "US", "rationale": "AI accelerators: key supplier to Azure and an AI-cycle benchmark"},
+    {"ticker": "ORCL", "name": "Oracle", "cik": "0001341439", "name_match": "oracle", "region": "US", "rationale": "OCI, databases, enterprise applications: cloud and database rival"},
+    {"ticker": "CRM", "name": "Salesforce", "cik": "0001108524", "name_match": "salesforce", "region": "US", "rationale": "CRM and enterprise SaaS: rival to Dynamics 365"},
+    {"ticker": "ADBE", "name": "Adobe", "cik": "0000796343", "name_match": "adobe", "region": "US", "rationale": "Creative and document cloud software: subscription-software benchmark"},
+    {"ticker": "IBM", "name": "IBM", "cik": "0000051143", "name_match": "international business machines", "region": "US", "rationale": "Hybrid cloud, AI and consulting: enterprise IT incumbent"},
+    {"ticker": "SAP", "name": "SAP", "cik": "0001000184", "name_match": "sap", "region": "Europe", "rationale": "ERP and enterprise software: rival to Dynamics ERP (files 20-F, reports in EUR)"},
+    {"ticker": "BABA", "name": "Alibaba Group", "cik": "0001577552", "name_match": "alibaba", "region": "China", "rationale": "Alibaba Cloud: leading cloud provider in Asia (files 20-F, reports in CNY)"}
+  ]
+}
