@@ -36,13 +36,24 @@ jobs:
         continue-on-error: true
         shell: bash
         env:
-          # SEC 공정 접근 정책: 실제 연락처가 포함된 User-Agent가 필요합니다 (noreply 주소는 거절됨).
-          # Settings > Secrets and variables > Actions > Variables 에
-          # SEC_USER_AGENT = "이름 이메일@도메인" (예: JY Research name@example.com) 으로 등록하세요.
-          SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
+          # Repository Settings > Secrets and variables > Actions > Secrets:
+          # Create SEC_USER_AGENT with a responsible name/service and a reachable email.
+          # Do not use a public Actions Variable for contact details in this public repository.
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
         run: |
           set -o pipefail
-          { python -m unittest discover -s tests -v && python scripts/fetch_sec.py; } 2>&1 | tee run.log
+          {
+            if [[ -z "${SEC_USER_AGENT:-}" ]]; then
+              echo "SEC_USER_AGENT secret is missing. Add it under Settings > Secrets and variables > Actions > Secrets."
+              echo "Use a responsible person/service name plus a reachable email address; email alone is insufficient."
+              exit 1
+            fi
+            if [[ "${SEC_USER_AGENT}" != *"@"* ]]; then
+              echo "SEC_USER_AGENT must include a reachable email address as well as a responsible name."
+              exit 1
+            fi
+            python -m unittest discover -s tests -v && python scripts/fetch_sec.py
+          } 2>&1 | tee run.log
 
       - name: Save failure log to repo
         if: steps.crawl.outcome == 'failure'
