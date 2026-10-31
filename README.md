@@ -46,7 +46,7 @@ SEC EDGAR에 공시된 Microsoft(MSFT, CIK 0000789019)의 10-K·10-Q 데이터(X
 
 Actions 탭의 **Update SEC data & deploy dashboard → Run workflow** 로 언제든 수동 실행할 수 있습니다.
 
-**최초 1회 설정 필요:** SEC는 실제 연락처가 포함된 User-Agent를 요구하며, 없거나 `noreply` 주소이면 "Undeclared Automated Tool"로 403 거절합니다. 저장소 *Settings → Secrets and variables → Actions → Variables → New repository variable*에서 이름 `SEC_USER_AGENT`, 값 `이름 이메일@도메인`(예: `JY Research name@example.com`)을 등록하세요. 실패 시 원인은 `logs/last_failure.log`에 기록됩니다.
+**최초 1회 설정 필요 (필수):** SEC는 담당자를 식별할 수 있는 User-Agent와 연락처를 요구합니다. 이메일만 입력하지 말고 **담당자/서비스 이름 + 실제 연락 가능한 이메일**을 함께 입력하세요 (예: `Jiyoun Lee SEC-Microsoft-Dashboard/1.0 jiyoun@example.com`). GitHub 저장소의 *Settings → Secrets and variables → Actions → Secrets → New repository secret*에서 이름을 `SEC_USER_AGENT`로, 값은 위 형식으로 등록합니다. 공개 저장소에서는 이메일 주소가 노출되지 않도록 **Variable이 아닌 Secret**을 사용하세요. 실패 시 원인은 `logs/last_failure.log`에 기록됩니다.
 
 ## Global peer firms
 
