@@ -1,0 +1,13 @@
+ticker,name,region,currency,fy_label,fy_end,revenue,operating_income,net_income,total_assets,op_margin,net_margin,rd_pct,capex_pct,fcf_margin,rationale
+MSFT,Microsoft,US,USD,FY2026,2026-06-30,331839.0,155237.0,133749.0,758376.0,46.78,40.31,10.72,34.94,20.19,Subject company (reference row)
+GOOGL,Alphabet,US,USD,FY2025,2025-12-31,402836.0,129039.0,132170.0,595281.0,32.03,32.81,15.16,22.7,18.19,"Google Cloud · Workspace · Gemini AI: direct rival in cloud, productivity and AI"
+AMZN,Amazon,US,USD,FY2025,2025-12-31,716924.0,79975.0,77670.0,818042.0,11.16,10.83,,18.39,1.07,AWS: the other leading hyperscale public cloud
+AAPL,Apple,US,USD,FY2025,2025-09-27,416161.0,133050.0,112010.0,359241.0,31.97,26.92,8.3,3.06,23.73,"Platform and devices (OS, PC, services): mega-cap platform peer"
+META,Meta Platforms,US,USD,FY2025,2025-12-31,200966.0,83276.0,60458.0,366021.0,41.44,30.08,28.55,34.68,22.94,AI infrastructure spending and open models: big-tech AI capex benchmark
+NVDA,NVIDIA,US,USD,FY2026,2026-01-25,215938.0,130387.0,120067.0,206803.0,60.38,55.6,8.57,2.8,44.77,AI accelerators: key supplier to Azure and an AI-cycle benchmark
+ORCL,Oracle,US,USD,FY2026,2026-05-31,67357.0,20606.0,17087.0,261759.0,30.59,25.37,15.25,82.64,-35.16,"OCI, databases, enterprise applications: cloud and database rival"
+CRM,Salesforce,US,USD,FY2026,2026-01-31,41525.0,8331.0,7457.0,112305.0,20.06,17.96,14.43,1.43,34.68,CRM and enterprise SaaS: rival to Dynamics 365
+ADBE,Adobe,US,USD,FY2025,2025-11-28,23769.0,8706.0,7130.0,29496.0,36.63,30.0,,0.75,41.45,Creative and document cloud software: subscription-software benchmark
+IBM,IBM,US,USD,FY2025,2025-12-31,67535.0,,10593.0,151880.0,,15.69,12.31,1.62,17.92,"Hybrid cloud, AI and consulting: enterprise IT incumbent"
+SAP,SAP,Europe,EUR,FY2025,2025-12-31,36800.0,9617.0,7161.0,70362.0,26.13,19.46,18.02,,,"ERP and enterprise software: rival to Dynamics ERP (files 20-F, reports in EUR)"
+BABA,Alibaba Group,China,CNY,FY2026,2026-03-31,1023670.0,50150.0,103592.0,1909570.0,4.9,10.12,6.5,,,"Alibaba Cloud: leading cloud provider in Asia (files 20-F, reports in CNY)"

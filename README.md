@@ -12,7 +12,7 @@ SEC EDGAR에 공시된 Microsoft(MSFT, CIK 0000789019)의 10-K·10-Q 데이터(X
 
 **대시보드:** https://jinawinwin.github.io/SEC_Microsoft/
 
-마지막 데이터 갱신: <!-- UPDATED:START -->아직 실행 전 — 첫 자동 실행 후 갱신됩니다<!-- UPDATED:END -->
+마지막 데이터 갱신: <!-- UPDATED:START -->2026-10-31 (latest 10-K/10-Q on file: 2026-10-28)<!-- UPDATED:END -->
 
 ## 대시보드 구성
 
@@ -53,21 +53,20 @@ Actions 탭의 **Update SEC data & deploy dashboard → Run workflow** 로 언�
 비교 대상은 `config/peers.json`에서 편집할 수 있습니다. 아래 표는 매월 자동으로 갱신됩니다. 금액은 각 사 보고통화 기준 백만 단위이며, 통화가 다른 기업(SAP, Alibaba)은 비율 지표만 직접 비교할 수 있습니다.
 
 <!-- PEERS:START -->
-| Company | Ticker | Region | Why a peer |
-|---|---|---|---|
-| Alphabet | GOOGL | US | Google Cloud · Workspace · Gemini AI: direct rival in cloud, productivity and AI |
-| Amazon | AMZN | US | AWS: the other leading hyperscale public cloud |
-| Apple | AAPL | US | Platform and devices (OS, PC, services): mega-cap platform peer |
-| Meta Platforms | META | US | AI infrastructure spending and open models: big-tech AI capex benchmark |
-| NVIDIA | NVDA | US | AI accelerators: key supplier to Azure and an AI-cycle benchmark |
-| Oracle | ORCL | US | OCI, databases, enterprise applications: cloud and database rival |
-| Salesforce | CRM | US | CRM and enterprise SaaS: rival to Dynamics 365 |
-| Adobe | ADBE | US | Creative and document cloud software: subscription-software benchmark |
-| IBM | IBM | US | Hybrid cloud, AI and consulting: enterprise IT incumbent |
-| SAP | SAP | Europe | ERP and enterprise software: rival to Dynamics ERP (files 20-F, reports in EUR) |
-| Alibaba Group | BABA | China | Alibaba Cloud: leading cloud provider in Asia (files 20-F, reports in CNY) |
-
-*재무 수치 열(매출, 영업이익률 등)은 첫 자동 실행 후 이 표에 채워집니다.*
+| Company | Ticker | Region | Why a peer | FY end | Revenue (m) | Op. margin | Net margin | R&D / rev | CapEx / rev | Ccy |
+|---|---|---|---|---|---:|---:|---:|---:|---:|---|
+| **Microsoft** | MSFT | US | Subject company (reference row) | 2026-06-30 | 331,839 | 46.8% | 40.3% | 10.7% | 34.9% | USD |
+| Alphabet | GOOGL | US | Google Cloud · Workspace · Gemini AI: direct rival in cloud, productivity and AI | 2025-12-31 | 402,836 | 32.0% | 32.8% | 15.2% | 22.7% | USD |
+| Amazon | AMZN | US | AWS: the other leading hyperscale public cloud | 2025-12-31 | 716,924 | 11.2% | 10.8% | — | 18.4% | USD |
+| Apple | AAPL | US | Platform and devices (OS, PC, services): mega-cap platform peer | 2025-09-27 | 416,161 | 32.0% | 26.9% | 8.3% | 3.1% | USD |
+| Meta Platforms | META | US | AI infrastructure spending and open models: big-tech AI capex benchmark | 2025-12-31 | 200,966 | 41.4% | 30.1% | 28.6% | 34.7% | USD |
+| NVIDIA | NVDA | US | AI accelerators: key supplier to Azure and an AI-cycle benchmark | 2026-01-25 | 215,938 | 60.4% | 55.6% | 8.6% | 2.8% | USD |
+| Oracle | ORCL | US | OCI, databases, enterprise applications: cloud and database rival | 2026-05-31 | 67,357 | 30.6% | 25.4% | 15.2% | 82.6% | USD |
+| Salesforce | CRM | US | CRM and enterprise SaaS: rival to Dynamics 365 | 2026-01-31 | 41,525 | 20.1% | 18.0% | 14.4% | 1.4% | USD |
+| Adobe | ADBE | US | Creative and document cloud software: subscription-software benchmark | 2025-11-28 | 23,769 | 36.6% | 30.0% | — | 0.8% | USD |
+| IBM | IBM | US | Hybrid cloud, AI and consulting: enterprise IT incumbent | 2025-12-31 | 67,535 | — | 15.7% | 12.3% | 1.6% | USD |
+| SAP | SAP | Europe | ERP and enterprise software: rival to Dynamics ERP (files 20-F, reports in EUR) | 2025-12-31 | 36,800 | 26.1% | 19.5% | 18.0% | — | EUR |
+| Alibaba Group | BABA | China | Alibaba Cloud: leading cloud provider in Asia (files 20-F, reports in CNY) | 2026-03-31 | 1,023,670 | 4.9% | 10.1% | 6.5% | — | CNY |
 <!-- PEERS:END -->
 
 ## 로컬 실행
