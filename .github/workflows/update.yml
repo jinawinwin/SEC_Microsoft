@@ -48,8 +48,9 @@ jobs:
               echo "Use a responsible person/service name plus a reachable email address; email alone is insufficient."
               exit 1
             fi
-            if [[ "${SEC_USER_AGENT}" != *"@"* ]]; then
-              echo "SEC_USER_AGENT must include a reachable email address as well as a responsible name."
+            if [[ "${SEC_USER_AGENT}" != *"@"* || "${SEC_USER_AGENT}" != *" "* ]]; then
+              echo "SEC_USER_AGENT must include an application/organization name followed by a reachable email address."
+              echo "Recommended format: SEC_Microsoft Dashboard contact@example.com"
               exit 1
             fi
             python -m unittest discover -s tests -v && python scripts/fetch_sec.py
