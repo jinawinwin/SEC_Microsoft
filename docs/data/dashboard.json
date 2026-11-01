@@ -5,7 +5,7 @@
   "cik": "0000789019",
   "currency": "USD",
   "fiscal_year_end_month": 6,
-  "generated_on": "2026-10-31",
+  "generated_on": "2026-11-01",
   "latest_filing_date": "2026-10-28",
   "source": "SEC EDGAR XBRL companyfacts API (data.sec.gov)",
   "units": "USD millions (EPS in USD); ratios in %"

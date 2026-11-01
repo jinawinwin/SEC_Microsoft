@@ -12,7 +12,7 @@ SEC EDGAR에 공시된 Microsoft(MSFT, CIK 0000789019)의 10-K·10-Q 데이터(X
 
 **대시보드:** https://jinawinwin.github.io/SEC_Microsoft/
 
-마지막 데이터 갱신: <!-- UPDATED:START -->2026-10-31 (latest 10-K/10-Q on file: 2026-10-28)<!-- UPDATED:END -->
+마지막 데이터 갱신: <!-- UPDATED:START -->2026-11-01 (latest 10-K/10-Q on file: 2026-10-28)<!-- UPDATED:END -->
 
 ## 대시보드 구성
 
